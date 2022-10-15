@@ -12,6 +12,7 @@ from lib.secrets import *
 app = Flask(__name__)
 app.debug = True
 
+
 def text_door_status(door_status):
 	msg = 'Garage door '+door_status
 	server = smtplib.SMTP("smtp.gmail.com", 587)
