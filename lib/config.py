@@ -21,3 +21,5 @@ HOME = "home.html"
 
 # other
 GMAIL_SMTP = "smtp.gmail.com"
+
+PORT = '8080'

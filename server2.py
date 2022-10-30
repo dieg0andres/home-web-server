@@ -21,14 +21,19 @@ def home():
 	return rm.handle_home()
 
 
-@app.route('/log/<author>/<message>')
-def log(author, message):
-	return rm.handle_log(author, message)
+@app.route('/ip/<device>/<ip>')
+def ip(device, ip):
+	return rm.handle_ip(device, ip)
 
 
 @app.route('/garage_door_controller/<command>')
 def garage_door_controller(command):
 	return rm.handle_garage_door_controller(command)
+
+
+@app.route('/log/<author>/<message>')
+def log(author, message):
+	return rm.handle_log(author, message)
 
 
 if __name__ == "__main__":
