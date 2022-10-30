@@ -1,5 +1,21 @@
 <!doctype html>
 <title>HWS</title>
   <h1>Home Web Server</h1>
-  <p><a href="http://192.168.86.32:8080/garage_door_controller/open_close_door">Open / Close Door</a></p>
+  <h2>Garage Door</h2>
+  <p><a href="http://192.168.86.32:8080/garage_door_controller/open_close_door">Open/Close</a></p>
   <p>Door status: {{door_status}}</p>
+
+  <h2>Shades</h2>
+  <h3>Living Room</h3>
+  <h4>East</h4>
+  <h4>South</h4>
+  <p>
+    <a href="http://192.168.86.32:8080/s/living_room/south/all/open">Open</a>
+    <a href="http://192.168.86.32:8080/s/living_room/south/all/closed">Close</a>
+    <a href="http://192.168.86.32:8080/s/living_room/south/all/mid">Mid</a>
+
+  </p>
+  <h3>Hallway</h3>
+  <h3>Bed Room</h3>
+  <h4>South</h4>
+  <h4>West</h4>
